@@ -1,0 +1,94 @@
+:root{
+   
+}
+body{ 
+    margin: 0;
+    
+}
+.backgr{
+    
+    height: 100vh;
+    width: 50vw;
+    background-image: url('https://149359637.v2.pressablecdn.com/wp-content/uploads/2021/08/Space-Earth-Wallpaper-About-Murals.jpg') ;
+    color: aliceblue;
+    background-size: cover;
+    /* display: grid;  */
+}
+
+.titlu {
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+    font-family: "Dancing Script", cursive
+}
+/* h1 { 
+    font-size: 1rem;
+    
+} */
+@media screen and (max-width: 1024px){
+    .titlu {font-size: 26px; }
+}
+@media screen and (max-width: 699px){
+    .titlu {font-size: 20px;
+    color: cyan;} 
+} 
+@media screen and (max-width: 399px){
+    .titlu {font-size: 10px;
+    color: chartreuse;}
+}
+
+
+.lorem{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+       
+    color: rgb(167, 224, 224);
+
+    background-clip: text;
+    transition: 1s;     
+    font-family: "Permanent Marker", cursive;  
+}
+
+.lorem:hover {
+    transform: scale(1.5);
+}
+.loreglass {
+    backdrop-filter: blur(1px);
+    height: 45px;
+    width: 350px;
+    border-radius: 16px;
+    background-image: linear-gradient(90deg, rgba(20, 108, 108, 0.3), rgba(151, 219, 99, 0.6));   
+    
+}
+.sarcina{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    position: absolute;
+    
+    justify-content: center;
+    top: 20px;
+    right: 150px;
+    text-align: center;
+   
+    gap: 100px 75px;
+    
+}
+.element{
+    border-bottom: 2px solid blue;
+    width: 100px;
+    
+}
+@media screen and (max-width: 1024px){
+    .sarcina {grid-template-columns: 1fr 1fr 1fr; }
+}
+@media screen and (max-width: 699px){
+    .sarcina {grid-template-columns: 1fr 1fr; }
+}
+@media screen and (max-width: 399px){
+    .sarcina {grid-template-columns: 1fr; }
+}
